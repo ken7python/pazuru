@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <style>
+        body {
+            background-color: aqua
+        }
+        #view{
+            position: fixed;
+            left: 50%;
+            top: 50%;
+            transform: translateX(-50%)
+                        translateY(-50%);
+        }
+        #number{
+            font-size: 1cm;
+            background-color:gold;
+        }
+        #number:hover{
+            background-color: darkorange;
+        }
+        #clear{
+            font-size:16vw;
+            color: red;
+        }
+        #StartButton{
+            font-size: 1cm;
+        }
+    </style>
+    
+    <title>パズルゲーム</title>
+</head>
+
+<body>
+    <h1>パズルゲーム</h1>
+    <p>上の段から数字を順番に並べよう<p>
+    <canvas id="game" width="800" height="450" style="background-color:transparent"></canvas>
+
+    <br>
+    <button id="StartButton" onclick="gs()">スタート</button>
+
+    <script src="main.js"></script>
+    <script src="GameMaster.js"></script>
+    <div id="view">
+
+    </div>
+</body>
+
+</html>
